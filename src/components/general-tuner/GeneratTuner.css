@@ -1,0 +1,19 @@
+.general-tuner {
+    display: flex;
+    flex-flow: column;
+
+    .title {
+        margin-bottom: 50px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        gap: 15px;
+
+        button {
+            flex: 50% 1 0;
+        }
+    }
+}
