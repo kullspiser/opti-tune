@@ -18,10 +18,6 @@ export const GeneralTuner = () => {
         detectorRef.current = new AudioFrequencyDetector();
     }, []);
 
-    useEffect(() => {
-        console.log(pitchResult);
-    }, [pitchResult]);
-
     const onClickStart = useCallback(() => {
         detectorRef.current!.start((frequency) => {
             try {
